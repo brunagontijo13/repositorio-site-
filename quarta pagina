@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    background: #ffffff; /* Alterei para fundo branco */
+    color: #000000; /* Alterei para texto preto */
+  }
+  
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #06b66c;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .topnav a:hover {
+    background-color: #0de589;
+    color: white;
+  }
+  
+  .leftcolumn {   
+    width: 75%;
+  }
+  
+  .rightcolumn {
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+  }
+  
+  .fakeimg {
+    background-color: #d6d6e7;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #d6d6e7;
+    margin-top: 20px;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+  
+  .logo {
+    max-width: 90%;
+    height: auto;
+  }
+  
+  .romantica {
+    font-family: Georgia, 'Times New Roman', serif;
+    text-align: center;
+    margin-top: 20px;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <div class="header">
+    <img src="banner.jpeg" class="logo">
+  </div>
+  
+  <div class="topnav">
+    <a href="#">Resenhas</a>
+    <a href="#">Listas</a>
+    <a href="#">Novidades</a>
+    <a href="#" style="float:right">Redes sociais</a>
+  </div>
+  
+</head>
+<body>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Jogos Vorezes </h2>
+      <img src="verão.jpeg.jpeg" style="height:400px; width:600px; margin: 0 auto;">
+      <p> </p>
+    </div>
+    <div class="card">
+      <h2>Em chamas</h2>
+      <img src="sem.jpeg" style="height:400px; width:600px; margin: 0 auto;">
+      <p></p>
+    </div>
+    <div class="card">
+      <h2>A esperança</h2>
+      <img src="sempre.jpeg.jpeg" style="height:500px; margin: 0 auto;">
+    </div>
+  </div>
+  
+</body>
+</html>
