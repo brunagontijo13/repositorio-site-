@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Percy Jackson e o mar de monstros</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      background: #ffffff; /* Alterei para fundo branco */
+      color: #000000; /* Alterei para texto preto */
+    }
+    
+    .header {
+      padding: 30px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.39);
+    }
+    
+    .topnav {
+      overflow: hidden;
+      background-color: #06b66c;
+    }
+    
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    .topnav a:hover {
+      background-color: #0de589;
+      color: white;
+    }
+    
+    .leftcolumn {   
+      width: 75%;
+    }
+    
+    .rightcolumn {
+      width: 25%;
+      background-color: #f1f1f1;
+      padding-left: 20px;
+    }
+    
+    .fakeimg {
+      background-color: #d6d6e7;
+      width: 100%;
+      padding: 20px;
+    }
+    
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .row::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #d6d6e7;
+      margin-top: 20px;
+    }
+    
+    @media screen and (max-width: 800px) {
+      .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+      }
+    }
+    
+    @media screen and (max-width: 400px) {
+      .topnav a {
+        float: none;
+        width: 100%;
+      }
+    }
+    
+    .logo {
+      max-width: 90%;
+      height: auto;
+    }
+    
+    blockquote {
+      margin: 30px 0;
+      padding: 40px; /* aumentar tamanho da caixa */
+      background-color: rgba(240, 240, 240, 0.95); /* fundo branco com transparência */
+      border-left: 5px solid #06b66c;
+      border-radius: 0;
+      width: 80%; /* largura do bloco */
+      max-width: 800px; /* largura máxima do bloco */
+      margin-left: auto; /* centraliza horizontalmente */
+      margin-right: auto; /* centraliza horizontalmente */
+    }
+    
+    .justificado {
+      text-align: justify;
+    }
+    
+    .romantica {
+      font-family: Georgia, 'Times New Roman', serif;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  
+<div class="header">
+  <img src="banner.jpeg" class="logo">
+</div>
+
+<div class="topnav">
+  <a href="#">Resenhas</a>
+  <a href="#">Listas</a>
+  <a href="#">Novidades</a>
+  <a href="#" style="float:right">Redes sociais</a>
+</div>
+
+<div class="card">
+  <h2>O mar de monstros</h2>
+  <img src="tyson.jpeg" style="height: 400px; width: 600px; margin: 0 auto;">
+  <blockquote>
+    <p>O ano de Percy Jackson foi surpreendentemente calmo. Nenhum monstro na escola, nenhum acidente esquisito, nenhuma briga em sala de aula. Mas quando um inocente jogo de queimado se transforma em uma disputa mortal contra uma tenebrosa gangue de gigantes canibais, as coisas ficam, digamos, feias.</p>
+    <p>Com a chegada inesperada da amiga Annabeth vêm outras más notícias: as fronteiras que protegem o acampamento Meio-Sangue foram envenenadas por um inimigo desconhecido e, a menos que um antídoto seja encontrado, o único porto seguro dos semideuses será destruído.</p>
+    <p>Percy terá que enfrentar desafios ainda maiores para salvar o acampamento. Com a ajuda de Annabeth e de novos aliados, ele precisa encontrar uma solução rápida para o envenenamento das fronteiras e impedir que o acampamento seja destruído. A pressão é enorme e o tempo é curto, pois cada minuto conta na luta contra a ameaça que se aproxima.</p>
+</blockquote>
+
+
+
+</div>
+
+</body>
+</html>
