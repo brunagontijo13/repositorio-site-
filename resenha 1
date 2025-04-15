@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Percy Jackson e o ladrão de raios</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      background: #ffffff; /* Alterei para fundo branco */
+      color: #000000; /* Alterei para texto preto */
+    }
+    
+    .header {
+      padding: 30px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.39);
+    }
+    
+    .topnav {
+      overflow: hidden;
+      background-color: #06b66c;
+    }
+    
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    .topnav a:hover {
+      background-color: #0de589;
+      color: white;
+    }
+    
+    .leftcolumn {   
+      width: 75%;
+    }
+    
+    .rightcolumn {
+      width: 25%;
+      background-color: #f1f1f1;
+      padding-left: 20px;
+    }
+    
+    .fakeimg {
+      background-color: #d6d6e7;
+      width: 100%;
+      padding: 20px;
+    }
+    
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .row::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #d6d6e7;
+      margin-top: 20px;
+    }
+    
+    @media screen and (max-width: 800px) {
+      .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+      }
+    }
+    
+    @media screen and (max-width: 400px) {
+      .topnav a {
+        float: none;
+        width: 100%;
+      }
+    }
+    
+    .logo {
+      max-width: 90%;
+      height: auto;
+    }
+    
+    blockquote {
+      margin: 30px 0;
+      padding: 40px; /* aumentar tamanho da caixa */
+      background-color: rgba(240, 240, 240, 0.95); /* fundo branco com transparência */
+      border-left: 5px solid #06b66c;
+      border-radius: 0;
+      width: 80%; /* largura do bloco */
+      max-width: 800px; /* largura máxima do bloco */
+      margin-left: auto; /* centraliza horizontalmente */
+      margin-right: auto; /* centraliza horizontalmente */
+    }
+    
+    .justificado {
+      text-align: justify;
+    }
+    
+    .romantica {
+      font-family: Georgia, 'Times New Roman', serif;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  
+<div class="header">
+  <img src="banner.jpeg" class="logo">
+</div>
+
+<div class="topnav">
+  <a href="#">Resenhas</a>
+  <a href="#">Listas</a>
+  <a href="#">Novidades</a>
+  <a href="#" style="float:right">Redes sociais</a>
+</div>
+
+<div class="card">
+  <h2>O ladrão de raios</h2>
+  <img src="jackson.jpeg" style="height: 400px; width: 600px; margin: 0 auto;">
+  <blockquote>
+    <p>Percy Jackson está prestes a ser expulso do colégio interno. De novo. É a sexta vez que isso acontece. Aos 12 anos, esta é apenas uma das ameaças que pairam sobre ele, sem contar as consequências do transtorno de déficit de atenção e da dislexia...</p>
+    <p>Além disso, há as criaturas fantásticas e os deuses do Olimpo, que ultimamente parecem estar saindo dos livros de mitologia grega do colégio para a realidade. Ao que tudo indica, tem um pessoal bem irritado com o pobre garoto. Vários acidentes e revelações inexplicáveis afastam Percy de Nova Iorque, sua cidade, e o lançam em um campo de treinamento muito especial, onde ele é orientado para enfrentar uma missão que envolve humanos diferentes — metade deuses, metade humanos — além de seres mitológicos.</p>
+    <p>O raio mestre de Zeus foi roubado e é Percy quem deve recuperá-lo. Com a ajuda de novos amigos — um sátiro e a filha de uma deusa — Percy tem dez dias para reaver o raio, que representa a destruição original, e restabelecer a paz no Olimpo. Para isso, ele terá que fazer mais do que capturar um ladrão. Terá que lidar com um pai que o abandonou, resolver uma profecia proposta pelo oráculo e desvendar uma traição mais ameaçadora do que a fúria dos deuses.</p>
+</blockquote>
+
+  
+
+
+</div>
+
+</body>
+</html>
