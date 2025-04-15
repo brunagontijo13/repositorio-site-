@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Manual de Assassinato para boas garotas</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      background: #ffffff; /* Alterei para fundo branco */
+      color: #000000; /* Alterei para texto preto */
+    }
+    
+    .header {
+      padding: 30px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.39);
+    }
+    
+    .topnav {
+      overflow: hidden;
+      background-color: #06b66c;
+    }
+    
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    .topnav a:hover {
+      background-color: #0de589;
+      color: white;
+    }
+    
+    .leftcolumn {   
+      width: 75%;
+    }
+    
+    .rightcolumn {
+      width: 25%;
+      background-color: #f1f1f1;
+      padding-left: 20px;
+    }
+    
+    .fakeimg {
+      background-color: #d6d6e7;
+      width: 100%;
+      padding: 20px;
+    }
+    
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .row::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #d6d6e7;
+      margin-top: 20px;
+    }
+    
+    @media screen and (max-width: 800px) {
+      .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+      }
+    }
+    
+    @media screen and (max-width: 400px) {
+      .topnav a {
+        float: none;
+        width: 100%;
+      }
+    }
+    
+    .logo {
+      max-width: 90%;
+      height: auto;
+    }
+    
+    blockquote {
+      margin: 30px 0;
+      padding: 40px; /* aumentar tamanho da caixa */
+      background-color: rgba(240, 240, 240, 0.95); /* fundo branco com transparência */
+      border-left: 5px solid #06b66c;
+      border-radius: 0;
+      width: 80%; /* largura do bloco */
+      max-width: 800px; /* largura máxima do bloco */
+      margin-left: auto; /* centraliza horizontalmente */
+      margin-right: auto; /* centraliza horizontalmente */
+    }
+    
+    .justificado {
+      text-align: justify;
+    }
+    
+    .romantica {
+      font-family: Georgia, 'Times New Roman', serif;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  
+<div class="header">
+  <img src="banner.jpeg" class="logo">
+</div>
+
+<div class="topnav">
+  <a href="#">Resenhas</a>
+  <a href="#">Listas</a>
+  <a href="#">Novidades</a>
+  <a href="#" style="float:right">Redes sociais</a>
+</div>
+
+<div class="card">
+  <h2>Manual de Assassinato para boas garotas</h2>
+  <img src="manual de assasinato.jpg" style="height: 400px; width: 600px; margin: 0 auto;">
+  <blockquote>
+    Após Andie Bell, a garota mais bonita e popular da escola, ser assassinada por seu namorado e o mesmo ter suicidado depois de cometer o crime, Pip decide usar seu projeto de conclusão de curso para investigar todos os acontecimentos envolvendo a situação e entender as peças que não estão se encaixando ou faltando nesse quebra-cabeça.
+  </blockquote>
+  
+
+
+</div>
+
+</body>
+</html>
