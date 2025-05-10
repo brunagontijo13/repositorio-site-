@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      background: #ffffff;
+      color: #000000;
+    }
+
+    .header {
+      padding: 30px;
+      text-align: center;
+      background: white;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #2cc8f7;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .topnav a:hover {
+      background-color: #009bcb;
+      color: white;
+    }
+
+    .leftcolumn {   
+      width: 75%;
+      float: left;
+      padding: 0 20px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #d6d6e7;
+      margin-top: 20px;
+      clear: both;
+    }
+
+    @media screen and (max-width: 800px) {
+      .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      .topnav a {
+        float: none;
+        width: 100%;
+      }
+    }
+
+    .logo {
+      max-width: 90%;
+      height: auto;
+    }
+
+    a.card-link {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <img src="banner.jpeg" class="logo">
+</div>
+
+<div class="topnav">
+  <a href="#">Inicio</a>
+  <a href="#">Resenhas</a>
+   
+</div>
+  <a href="#" style="float:right"></a>
+
+
+<!-- Conteúdo do site -->
+<div class="leftcolumn">
+
+  <a href="resenhapercy.html" class="card-link">
+    <div class="card">
+      <h2>O Ladrão de Raios</h2>
+      <img src="jackson.jpeg" style="max-height:400px;" alt="Imagem do livro O Ladrão de Raios">
+      <p>Clique para ler a resenha completa!</p>
+    </div>
+  </a>
+
+  <a href="resenhatyson.html" class="card-link">
+    <div class="card">
+      <h2>O Mar de Monstros</h2>
+      <img src="tyson.jpeg" style="max-height:400px;" alt="Imagem do livro O Mar de Monstros">
+      <p>Clique para ler a resenha completa!</p>
+    </div>
+  </a>
+
+  <a href="resenhatalia.html" class="card-link">
+    <div class="card">
+      <h2>A Maldição do Titã</h2>
+      <img src="talia..jpg" style="max-height:400px;" alt="Imagem do livro A Maldição do Titã">
+      <p>Clique para ler a resenha completa!</p>
+    </div>
+  </a>
+
+  <a href="resenhaannabeth.html" class="card-link">
+    <div class="card">
+      <h2>A Batalha do Labirinto</h2>
+      <img src="camp.jpeg" style="max-height:400px;" alt="Imagem do livro A Batalha do Labirinto">
+      <p>Clique para ler a resenha completa!</p>
+    </div>
+  </a>
+
+  <a href="resenhaluke.html" class="card-link">
+    <div class="card">
+      <h2>O Último Olimpiano</h2>
+      <img src="luta.jpeg" style="max-height:400px;" alt="Imagem do livro O Último Olimpiano">
+      <p>Clique para ler a resenha completa!</p>
+    </div>
+  </a>
+
+</div>
+
+
+</body>
+</html>
