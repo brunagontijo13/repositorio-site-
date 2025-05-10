@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      background: #ffffff;
+      color: #000000;
+    }
+
+    .header {
+      padding: 30px;
+      text-align: center;
+      background: white;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #06b66c;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .topnav a:hover {
+      background-color: #009bcb;
+      color: white;
+    }
+
+    .leftcolumn {   
+      width: 75%;
+      float: left;
+      padding: 0 20px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .row::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #d6d6e7;
+      margin-top: 20px;
+    }
+
+    @media screen and (max-width: 800px) {
+      .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      .topnav a {
+        float: none;
+        width: 100%;
+      }
+    }
+
+    .logo {
+      max-width: 90%;
+      height: auto;
+    }
+
+    a.card-link {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="header">
+  <img src="banner.jpeg" class="logo">
+</div>
+
+<div class="topnav">
+  <a href="#">Inicio</a>
+  <a href="#">Resenhas</a>
+   
+  <div class="dropdown" onclick="toggleDropdown()">
+   
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+
+    <a href="resenhabelly.html" class="card-link">
+      <div class="card">
+        <h2>O Verão que Mudou Minha Vida</h2>
+        <img src="verão.jpeg.jpeg" style="height:400px; width:600px; margin: 0 auto;" alt="Capa do livro O Verão que Mudou Minha Vida">
+        <p>Clique para ler a resenha completa!</p>
+      </div>
+    </a>
+
+    <a href="resenhasemvoce.html" class="card-link">
+      <div class="card">
+        <h2>Sem Você Não É Verão</h2>
+        <img src="sem.jpeg" style="height:400px; width:600px; margin: 0 auto;" alt="Capa do livro Sem Você Não É Verão">
+        <p>Clique para ler a resenha completa!</p>
+      </div>
+    </a>
+
+    <a href="resenhasempre.html" class="card-link">
+      <div class="card">
+        <h2>Sempre Teremos o Verão</h2>
+        <img src="sempre.jpeg.jpeg" style="height:500px; margin: 0 auto;" alt="Capa do livro Sempre Teremos o Verão">
+        <p>Clique para ler a resenha completa!</p>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<div class="footer">
+  <p>Site de Resenhas © 2025</p>
+</div>
+
+</body>
+</html>
