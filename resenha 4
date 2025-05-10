@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Percy Jackson e a Batalha do Labirinto</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      background: #ffffff;
+      color: #000000;
+    }
+    
+    .header {
+      padding: 30px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.39);
+    }
+    
+    .topnav {
+      overflow: hidden;
+      background-color: #2cc8f7;
+    }
+    
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    .topnav a:hover {
+      background-color: #0de589;
+      color: white;
+    }
+    
+    .leftcolumn {   
+      width: 75%;
+    }
+    
+    .rightcolumn {
+      width: 25%;
+      background-color: #f1f1f1;
+      padding-left: 20px;
+    }
+    
+    .fakeimg {
+      background-color: #d6d6e7;
+      width: 100%;
+      padding: 20px;
+    }
+    
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .row::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #d6d6e7;
+      margin-top: 20px;
+    }
+    
+    @media screen and (max-width: 800px) {
+      .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+      }
+    }
+    
+    @media screen and (max-width: 400px) {
+      .topnav a {
+        float: none;
+        width: 100%;
+      }
+    }
+    
+    .logo {
+      max-width: 90%;
+      height: auto;
+    }
+    
+    blockquote {
+      margin: 30px 0;
+      padding: 40px;
+      background-color: rgba(240, 240, 240, 0.95);
+      border-left: 5px solid #06b66c;
+      border-radius: 0;
+      width: 80%;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .justificado {
+      text-align: justify;
+    }
+    
+    .romantica {
+      font-family: Georgia, 'Times New Roman', serif;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  
+<div class="header">
+  <img src="banner.jpeg" class="logo">
+</div>
+
+<div class="topnav">
+  <a href="#">Resenhas</a>
+  <a href="#">Listas</a>
+  <a href="#">Novidades</a>
+  <a href="#" style="float:right">Redes sociais</a>
+</div>
+
+<div class="card">
+  <h2>A Batalha do Labirinto</h2>
+  <img src="camp.jpeg" style="height: 400px; width: 600px; margin: 0 auto;">
+  <blockquote>
+    <p>Percy começou o ano letivo em uma nova escola. Ele já esperava que a experiência não fosse das mais agradáveis, mas ao se deparar com líderes de torcida monstruosas e famintas, concluiu que as coisas podem sempre piorar.</p>
+    
+    <p>O tempo está se esgotando, e a batalha entre os deuses do Olimpo e Cronos, o senhor dos Titãs, está cada vez mais próxima. Até o acampamento Meio-Sangue, o porto seguro dos heróis, se torna vulnerável à medida que o exército de Cronos abre caminho para atacar as fronteiras até então impenetráveis.</p>
+    
+    <p>Para detê-los, Percy e seus amigos semideuses partirão em uma jornada ao labirinto de Dédalo — um interminável universo subterrâneo que, a cada curva, revela as mais inesperadas surpresas.</p>
+  </blockquote>
+
+  <!-- Área de conteúdo dinâmico -->
+  <div id="resenha-content" class="justificado" style="width: 80%; max-width: 800px; margin-top: 20px;"></div>
+</div>
+
+<!-- Campo para editar e salvar a resenha -->
+<div class="card" id="edit-section">
+  <textarea id="review-text" rows="10" style="width: 100%; max-width: 800px; margin-bottom: 10px;"></textarea><br>
+  <button id="edit-btn">Editar</button>
+  <button id="save-btn">Salvar</button>
+</div>
+
+<script>
+  const textArea = document.getElementById('review-text');
+  const resenhaContent = document.getElementById('resenha-content');
+  const savedReview = localStorage.getItem('resenhaBatalhaLabirinto');
+
+  if (savedReview) {
+    textArea.value = savedReview;
+    resenhaContent.innerHTML = savedReview;
+  } else {
+    textArea.value = 'Digite sua resenha aqui...';
+  }
+
+  document.getElementById('edit-btn').addEventListener('click', () => {
+    textArea.focus();
+  });
+
+  document.getElementById('save-btn').addEventListener('click', () => {
+    const newReview = textArea.value;
+    localStorage.setItem('resenhaBatalhaLabirinto', newReview);
+    resenhaContent.innerHTML = newReview;
+    alert('Resenha salva com sucesso!');
+  });
+</script>
+
+</body>
+</html>
