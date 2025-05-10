@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  background: #ffffff;
+  color: #000000;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #2cc8f7;
+  position: relative;
+}
+
+.topnav a, .topnav .dropdown {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #009bcb;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  z-index: 1;
+  top: 50px;
+}
+
+.dropdown-content ol {
+  margin: 0;
+  padding: 10px;
+  list-style-type: decimal;
+}
+
+.dropdown-content li {
+  padding: 8px 12px;
+}
+
+.dropdown-content li a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content li a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.leftcolumn {   
+  width: 75%;
+}
+
+.rightcolumn {
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+.fakeimg {
+  background-color: #d6d6e7;
+  width: 100%;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #d6d6e7;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a, .topnav .dropdown {
+    float: none;
+    width: 100%;
+  }
+}
+
+.logo {
+  max-width: 90%;
+  height: auto;
+}
+
+.romantica {
+  font-family: Georgia, 'Times New Roman', serif;
+  text-align: center;
+  margin-top: 20px;
+}
+
+a.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <img src="banner.jpeg" class="logo">
+</div>
+
+
+<div class="topnav">
+  <a href="#">Inicio</a>
+  <a href="#">Resenhas</a>
+   
+   
+</div>
+
+<!-- Conteúdo do site -->
+<div class="row">
+  <div class="leftcolumn">
+    
+    <a href="Manual%20de%20%20Assinato%20para%20boas%20garotas.html" class="card-link">
+      <div class="card">
+        <h2>Manual de Assassinato para Boas Garotas</h2>
+        <img src="manual de assasinato.jpg" style="height:400px; width:600px; margin: 0 auto;" alt="Manual de Assassinato para Boas Garotas">
+        <p>Clique para ler a resenha completa!</p>
+      </div>
+    </a>
+
+    <a href="boagarota.html" class="card-link">
+      <div class="card">
+        <h2>Boa Garota Segredo Mortal</h2>
+        <img src="livrovermelho.jpg" style="height:400px; width:600px; margin: 0 auto;" alt="Boa Garota Segredo Mortal">
+        <p>Clique para ler a resenha completa!</p>
+      </div>
+    </a>
+
+    <a href="nuncamais.html" class="card-link">
+      <div class="card">
+        <h2>Boa Garota Nunca Mais</h2>
+        <img src="nunca.jpg" style="height:500px; margin: 0 auto;" alt="Boa Garota Nunca Mais">
+        <p>Clique para ler a resenha completa!</p>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+</body>
+</html>
