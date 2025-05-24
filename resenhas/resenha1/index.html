@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Percy Jackson e o Ladrão de Raios</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="header">
+    <img src="banner.jpeg" class="logo" alt="Banner do site">
+  </div>
+
+  <div class="topnav">
+    <a href="#">Resenhas</a>
+    <a href="#">Listas</a>
+    <a href="#">Novidades</a>
+    <a href="resenha.html" style="float:right">Nova Resenha</a>
+    <a href="#" style="float:right">Redes Sociais</a>
+  </div>
+
+  <div class="card">
+    <h2>O Ladrão de Raios</h2>
+    <img src="jackson.jpeg" alt="Capa do livro O Ladrão de Raios" style="height: 400px; width: 600px; margin: 0 auto;">
+    <blockquote>
+      O livro segue a vida de Percy Jackson, um garoto de doze anos com dislexia e transtorno de déficit de atenção (TDAH), que vive com sua mãe em Nova York...
+    </blockquote>
+    <div id="resenha-content" class="justificado"></div>
+  </div>
+
+  <div class="card" id="edit-section">
+    <h3>Escreva sua resenha:</h3>
+    <textarea id="review-text" rows="8" placeholder="Digite sua resenha aqui..."></textarea><br>
+    <button id="edit-btn">Editar</button>
+    <button id="save-btn">Salvar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

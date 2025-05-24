@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Percy Jackson e o Último Olimpiano</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<div class="header">
+  <img src="banner.jpeg" class="logo">
+</div>
+
+<div class="topnav">
+  <a href="#">Resenhas</a>
+  <a href="#">Listas</a>
+  <a href="#">Novidades</a>
+  <a href="#" style="float:right">Redes sociais</a>
+</div>
+
+<div class="card">
+  <h2>O Último Olimpiano</h2>
+  <img src="luta.jpeg" style="height: 400px; width: 600px; margin: 0 auto;">
+  <blockquote>
+    <p>Os meio-sangues passaram o ano inteiro se preparando para a batalha contra os Titãs e sabem que as chances de vitória são pequenas.</p>
+    <p>O exército de Cronos está mais poderoso do que nunca, e cada deus ou semideus que se une à causa confere mais força ao vingativo Titã.</p>
+    <p>Enquanto os olimpianos tentam conter a fúria do monstro Tifão, Cronos avança em direção à cidade de Nova Iorque, onde o Monte do Olimpo está precariamente vigiado.</p>
+    <p>Agora, apenas Percy Jackson e seu exército de heróis podem deter o senhor do tempo.</p>
+  </blockquote>
+
+  <!-- Área de conteúdo dinâmico -->
+  <div id="resenha-content" class="justificado" style="width: 80%; max-width: 800px; margin-top: 20px;"></div>
+</div>
+
+<!-- Campo para editar e salvar a resenha -->
+<div class="card" id="edit-section">
+  <textarea id="review-text" rows="10" style="width: 100%; max-width: 800px; margin-bottom: 10px;"></textarea><br>
+  <button id="edit-btn">Editar</button>
+  <button id="save-btn">Salvar</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
