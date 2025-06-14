@@ -1,41 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Boa Garota: Segredo Mortal</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Seu CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  
-<div class="header">
-  <img src="./imagens/banner.jpeg" class="logo" alt="Banner">
-</div>
 
-<div class="topnav">
-  <a href="#">Resenhas</a>
-  <a href="#">Listas</a>
-  <a href="#">Novidades</a>
-  <a href="#" style="float:right">Redes sociais</a>
-</div>
+  <!-- Header com logo centralizado -->
+  <header class="bg-light py-3 mb-4">
+    <div class="container d-flex justify-content-center">
+      <img src="./imagens/banner.jpeg" class="img-fluid" alt="Banner" style="max-height: 80px;" />
+    </div>
+  </header>
 
-<div class="card">
-  <h2>Boa Garota: Segredo Mortal</h2>
-  <img src="./imagens/livrovermelho.jpg" alt="Capa do livro" style="height: 400px; width: 600px; margin: 0 auto;">
-  <blockquote>
-    Pip está prestes a ir para a faculdade, mas ainda é assombrada pelo desfecho de sua investigação mais recente. Devido à fama de detetive amadora, ela se acostumou a receber ameaças na internet. Mas, nos últimos tempos, uma pergunta não para de surgir: Quem vai investigar quando você desaparecer? Após uma série de eventos estranhos, Pip percebe que está sendo perseguida de verdade. E pior: seu stalker pode estar conectado a um assassino que aterrorizou a região na mesma época do caso de Andie Bell. Com a ajuda de Ravi, a garota precisa descobrir quem está por trás disso… antes que se torne a próxima vítima. Envolta em uma teia de segredos e perigos, Pip toma atitudes drásticas. Tudo em Little Kilton parece estar interligado e apontar para um único suspeito. É a investigação mais importante de sua vida, e também a última. Aconteça o que acontecer, seus dias de boa garota vão chegar ao fim. Prepare-se para questionar tudo o que achava que sabia com o desfecho chocante da jornada de Pip. Na aguardada conclusão da série Manual de assassinato para boas garotas, Holly Jackson entrega mais uma trama envolvente, assustadora e inesquecível.
-  </blockquote>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Resenhas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Listas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Novidades</a></li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Redes sociais</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  <!-- Área de conteúdo dinâmico -->
-  <div id="resenha-content" class="justificado" style="width: 80%; max-width: 800px; margin-top: 20px;"></div>
-</div>
+  <!-- Conteúdo principal -->
+  <main class="container">
 
-<!-- Campo para editar e salvar a resenha -->
-<div class="card" id="edit-section">
-  <textarea id="review-text" rows="10" style="width: 100%; max-width: 800px; margin-bottom: 10px;"></textarea><br>
-  <button id="edit-btn">Editar</button>
-  <button id="save-btn">Salvar</button>
-</div>
+    <div class="card mb-4 shadow-sm mx-auto" style="max-width: 800px;">
+      <div class="card-body text-center">
+        <h2 class="card-title mb-3">Boa Garota: Segredo Mortal</h2>
+        <img src="../../../imagens/livrovermelho.jpg" alt="Capa do livro" class="img-fluid mb-3" style="max-height: 400px; width: auto;"/>
+        <blockquote class="blockquote px-3">
+          Pip está sendo perseguida. Tudo em Little Kilton aponta para um último e perigoso mistério, o mais importante de sua vida.
+        </blockquote>
 
-<script src="script.js"></script>
+        <div id="resenha-content" class="text-start mt-4" style="min-height: 100px; white-space: pre-wrap;"></div>
+      </div>
+    </div>
+
+    <div class="card mx-auto" style="max-width: 800px;">
+      <div class="card-body">
+        <textarea id="review-text" class="form-control mb-3" rows="10" placeholder="Escreva sua resenha aqui..."></textarea>
+        <div class="d-flex justify-content-end gap-2">
+          <button id="edit-btn" class="btn btn-secondary">Editar</button>
+          <button id="save-btn" class="btn btn-primary">Salvar</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Bootstrap JS Bundle (Popper + Bootstrap JS) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script da resenha -->
+  <script>
+    const resenhaSegredo = document.getElementById("resenha-content");
+    const textareaSegredo = document.getElementById("review-text");
+    const editBtnSegredo = document.getElementById("edit-btn");
+    const saveBtnSegredo = document.getElementById("save-btn");
+
+    let textoSalvoSegredo = localStorage.getItem("resenhaSegredo") || "";
+    resenhaSegredo.innerText = textoSalvoSegredo;
+
+    editBtnSegredo.onclick = () => {
+      textareaSegredo.value = textoSalvoSegredo;
+      textareaSegredo.focus();
+    };
+
+    saveBtnSegredo.onclick = () => {
+      textoSalvoSegredo = textareaSegredo.value;
+      resenhaSegredo.innerText = textoSalvoSegredo;
+      localStorage.setItem("resenhaSegredo", textoSalvoSegredo);
+      textareaSegredo.value = "";
+    };
+  </script>
+
 </body>
 </html>
